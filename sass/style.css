@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+body .container .form {
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .container .form #task {
+  width: 70%;
+  border: 2px solid slateblue;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  color: #252525;
+  caret-color: slateblue;
+  text-transform: capitalize;
+}
+body .container .form #task::-moz-placeholder {
+  color: gray;
+  text-transform: capitalize;
+  opacity: 0.7;
+}
+body .container .form #task::placeholder {
+  color: gray;
+  text-transform: capitalize;
+  opacity: 0.7;
+}
+body .container .form #submit {
+  width: 30%;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: slateblue;
+  border: none;
+  border-radius: 5px;
+  padding: 11px 20px;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+body .container .form #submit:hover {
+  filter: brightness(120%);
+}
+body .container .tasks {
+  width: 100%;
+  background-color: #f2f3fa;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body .container .tasks .task {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px lightgray;
+}
+body .container .tasks .task p {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #444;
+  width: 75%;
+  padding: 7px 0;
+  font-size: 14px;
+}
+body .container .tasks .task span {
+  background-color: slateblue;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+body .container .tasks .task span:hover {
+  filter: brightness(120%);
+}
+body .container .tasks .done {
+  opacity: 0.6;
+}/*# sourceMappingURL=style.css.map */
